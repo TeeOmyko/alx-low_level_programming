@@ -5,20 +5,16 @@
  *
  * Description: Copies the string pointed to by strc
  * @dest: Where to copy to
- * @src:nString to be copied
+ * @src: String to be copied
  * Return: Pointer to dest
  */
 
 char *_strcpy(char *dest, char *src)
 {
-	int i, len = 0;
+	int a;
 
-	while (src[len] != '\0')
-		len++;
-	len++;
-
-	for (i = 0; i < len; i++)
-		dest[i] = src[1];
-
+	for (a = 0; src[a] != '\0'; a++)
+		dest[a] = src[a];
+	dest[a] = '\0';
 	return (dest);
 }
