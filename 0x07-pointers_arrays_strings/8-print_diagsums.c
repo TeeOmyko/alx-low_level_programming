@@ -13,14 +13,10 @@
 
 void print_diagsums(int *a, int size)
 {
-	int row;
-	int diag1 = 0;
-	int diag2 = 0;
-
+	int row, diag1 = 0; diag 2 = 0;
 	for (row = 0; row < size; row++)
 	{
-		diag1 += a[(size * row) + row];
-		diag2 += a[(size * (row + 1)) - (row + 1)];
+		diag1 += a[(size *row];
 	}
 	printf("%d, %d\n", diag1, diag2);
 }
