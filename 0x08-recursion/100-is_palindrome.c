@@ -40,7 +40,7 @@ int check_palindrome(char *s, int len, int index)
 
 	if (s[index] == s[len - index - 1])
 	{
-		return (check_palinndrome(s, lenn, index + 1));
+		return (check_palindrome(s, len, index + 1));
 	}
 	return (0);
 }
@@ -49,7 +49,7 @@ int check_palindrome(char *s, int len, int index)
  * is_palindrome - Checks if a string is a palindrome
  * @s: The string to be checked
  * Return: If the string is a palindrome - 1
- * If the strinng is not a palinndrome - 0
+ * If the strinng is not a palindrome - 0
  */
 
 int is_palindrome(char *s)
